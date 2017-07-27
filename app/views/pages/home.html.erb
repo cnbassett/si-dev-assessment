@@ -3,8 +3,8 @@
 
 <%= form_tag("/sms/send", method: "post") do %>
 <%= label_tag(:q1, "Text Message:") %>
-<%= text_field_tag(:q2) %>
-<%= label_tag(:q3, "Phone Number:") %>
-<%= text_field_tag(:q4) %>
+<%= text_field_tag(:q1) %><br>
+<%= label_tag(:q2, "Phone Number:") %>
+<%= text_field_tag(:q2) %><br>
 <%= submit_tag("Send") %>
 <% end %>
